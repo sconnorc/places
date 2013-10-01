@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  latitude: 9.99
+  longitude: 9.99
+  name: MyString
+  description: MyText
+
+two:
+  latitude: 9.99
+  longitude: 9.99
+  name: MyString
+  description: MyText
