@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+require 'csv'
+
+Landmark.delete_all
+CSV.foreach("#{Rails.root}/db/landmarks.csv") do |row|
+   Landmark.create!(:longitude => row[0], :latitude => row[1], :name => row[2], :description => row[3])
+end
