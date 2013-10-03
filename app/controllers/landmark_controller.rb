@@ -3,5 +3,7 @@ class LandmarkController < ApplicationController
   end
 
   def within
+  	@marks = Landmark.within(5, :origin => [params[:lat], params[:lon]])
+  	render json: @marks
   end
 end
