@@ -29,7 +29,7 @@ $(document).ready ->
 	# make a new map
 	initialize = () ->
         mapOptions = {
-          zoom: 8,
+          zoom: 13,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         map = new google.maps.Map(document.getElementById("map-canvas"),
